@@ -1,1 +1,20 @@
 /* add home page styles here */
+h1, h3, h5, button, input, div {
+    margin: 5px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+#hint-span {
+    visibility: hidden;
+}
+
+#result-h3 {
+    visibility: hidden;
+}
+
+#play-again-button {
+    visibility: hidden;
+}

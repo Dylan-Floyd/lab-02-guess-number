@@ -7,6 +7,9 @@ export function inputToNumber(userInput) {
 }
 
 export function checkGuess(guess, correctNumber) {
+    if (typeof guess !== 'number' || typeof correctNumber !== 'number') {
+        throw 'checkGuess requires two Number arguments';
+    }
     if (guess > correctNumber) {
         return 1;
     } else if (guess < correctNumber) {
