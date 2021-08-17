@@ -1,4 +1,7 @@
 export function inputToNumber(userInput) {
+    if (typeof userInput === 'undefined') {
+        throw 'userInput must be a number';
+    }
     let number = Number(userInput);
     if (isNaN(number)) {
         throw 'User input is not a number.';
