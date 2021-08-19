@@ -83,6 +83,8 @@ const updateHintSpan = hintVal => {
 };
 
 const handleNewGuess = () => {
+    if (guessInput.value === '')
+        return;
     triesLeft--;
     updateTriesLeftSpan();
 
